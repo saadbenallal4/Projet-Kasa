@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+
+    &__logo {
+        height: 60px;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -8,20 +8,27 @@ import AboutPage from './pages/AboutPage'
 import Logement from './pages/Logement'
 import Page404 from './pages/Page404'
 
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
+
+
+
 //App = composant principal de l'application (rappel)
 function App() {
   return (
-    // Toutes les routes sont définies ici
-    <Routes>
-
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/logement/:id" element={<Logement />} />
-      {/* Route pour toutes les URLs non définies (erreur 404) */}
-      <Route path="*" element={<Page404 />} />
-
-    </Routes>
-  )
+    <>
+      <Header />
+      {/* Toutes les routes sont définies ici */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/logement/:id" element={<Logement />} />
+        <Route path="*" element={<Page404 />} />
+      </Routes>
+      <Footer />
+    </>
+  );
 }
 
 // Exporte App pour pouvoir l’utiliser dans main.jsx (rappel)
