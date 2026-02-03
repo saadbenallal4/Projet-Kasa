@@ -12,8 +12,6 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 
-
-
 //App = composant principal de l'application (rappel)
 function App() {
   return (

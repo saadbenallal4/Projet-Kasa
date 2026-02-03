@@ -2,9 +2,6 @@
 
 import { Link } from 'react-router-dom';
 import './Header.scss';
-
-
-// Import du logo de Kasa (chemin relatif depuis le dossier Header)
 import logo from '../../assets/logo/logo.png';
 
 // Composant Header
@@ -17,7 +14,7 @@ function Header() {
             {/* Navigation principale */}
             <nav className="header__nav">
                 <Link to="/" className="header__link">Accueil</Link>
-                <Link to="/about" className="header__link">À propos</Link>
+                <Link to="/about" className="header__link">A Propos</Link>
             </nav>
         </header>
     );
