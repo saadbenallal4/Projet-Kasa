@@ -7,7 +7,7 @@ import './Home.scss';
 function Home() {
     return (
         <div className="home">
-            <Banner />
+            <Banner page="home" />
 
             {/* Conteneur principal des cards */}
             <div className="cards-container">
