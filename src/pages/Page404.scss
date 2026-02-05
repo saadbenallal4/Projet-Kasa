@@ -1,0 +1,27 @@
+.page-404 {
+    text-align: center;
+    color: #ff6060;
+    padding: 100px 20px;
+    font-family: "Montserrat", sans-serif;
+
+
+    .error-code {
+        font-size: 10rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .error-text {
+        font-size: 1.5rem;
+        margin: 20px 0;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .back-home {
+        font-size: 1rem;
+        color: black;
+        text-decoration: underline;
+        font-family: "Montserrat", sans-serif;
+        line-height: 10;
+    }
+}
