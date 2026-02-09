@@ -1,0 +1,110 @@
+/* ---------- Conteneur global de la page logement ---------- */
+.logement-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+/* ---------- Header (titre + carrousel déjà géré) ---------- */
+.slideshow {
+    margin-bottom: 30px;
+}
+
+/* ---------- TITRE + LOCALISATION ---------- */
+.logement-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* pour mobiles */
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.logement-info {
+    flex: 1 1 60%;
+}
+
+.logement-info h1 {
+    font-size: 26px;
+    color: #ff6060;
+    margin-bottom: 5px;
+}
+
+.location {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+
+    span {
+        font-weight: normal;
+    }
+}
+
+/* ---------- TAGS ---------- */
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    .tag {
+        background-color: #ff6060;
+        color: #fff;
+        border-radius: 10px;
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* ---------- HÔTE + RATING ---------- */
+.logement-host-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.host p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF6060;
+    /* couleur rose saumon */
+    margin: 0;
+}
+
+.host img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rating {
+    margin-top: 8px;
+    font-size: 22px;
+
+    .star {
+        color: #e3e3e3;
+        /* gris clair */
+    }
+
+    .star.filled {
+        color: #ff6060;
+        /* couleur active */
+    }
+}
+
+/* ---------- CONTENANT DES COLLAPSES ---------- */
+.logement-collapses {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
