@@ -1,7 +1,7 @@
 import React from 'react';
 import Collapse from '../components/Collapse/Collapse';
 import Banner from '../components/Banner/Banner';
-
+import './About.scss';
 
 // Composant de la page A propos, avec bannière spécifique et 4 collapses
 function AboutPage() {
@@ -11,9 +11,9 @@ function AboutPage() {
 
 
             <Collapse title="Fiabilité">
-                Les annonces postées sur Kasa garantissent une fiabilité totale.
-                Les photos sont conformes aux logements, et toutes les informations
-                sont régulièrement vérifiées par nos équipes.
+                <p>Les annonces postées sur Kasa garantissent une fiabilité totale.
+                    Les photos sont conformes aux logements, et toutes les informations
+                    sont régulièrement vérifiées par nos équipes.</p>
             </Collapse>
 
             <Collapse title="Respect">

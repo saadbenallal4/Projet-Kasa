@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
 import Logement from './pages/Logement'
 import Page404 from './pages/Page404'
+import './components/Collapse/Collapse.scss'
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';

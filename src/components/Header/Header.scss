@@ -5,7 +5,7 @@
     padding: 30px 50px;
 
     &__logo {
-        height: 60px;
+        width: 170px;
     }
 
     &__nav {
@@ -23,5 +23,33 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+/* ================= HEADER MOBILE ================= */
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header_logo {
+        height: 40px;
+        width: auto;
+    }
+
+
+    .header__nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    .header__nav a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
     }
 }

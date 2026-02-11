@@ -39,4 +39,34 @@
         border-radius: 10px;
         font-family: "Montserrat", sans-serif;
     }
+
+}
+
+@media screen and (max-width: 768px) {
+    .slideshow {
+        height: 255px; // Hauteur plus petite en mobile
+        border-radius: 15px;
+    }
+
+    .slideshow-image {
+        border-radius: 15px;
+    }
+
+    .arrow {
+        height: 24px;
+    }
+
+    .arrow.left {
+        left: 10px;
+    }
+
+    .arrow.right {
+        right: 10px;
+    }
+
+    .slideshow-counter {
+        bottom: 10px;
+        font-size: 0.9rem;
+        padding: 3px 8px;
+    }
 }

@@ -76,7 +76,6 @@
     font-size: 16px;
     font-weight: 500;
     color: #FF6060;
-    /* couleur rose saumon */
     margin: 0;
 }
 
@@ -107,4 +106,73 @@
     display: flex;
     gap: 30px;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .logement-container {
+        max-width: 100%;
+    }
+
+    .slideshow {
+        width: 100%;
+        height: 255px;
+    }
+
+    .slideshow-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+    .logement-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .logement-host-rating {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .host {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .host img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .rating .star {
+        width: 20px;
+        height: 20px;
+    }
+
+    .location {
+        font-size: 14px;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tag {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .logement-collapses {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
 }

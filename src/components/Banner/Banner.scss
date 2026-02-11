@@ -26,3 +26,26 @@
         font-family: 'Montserrat', sans-serif;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .banner {
+        width: 335px;
+        height: 111px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+
+        img {
+            border-radius: 10px;
+        }
+
+        &-text {
+            font-size: 20px;
+            line-height: 26px;
+            padding: 0 40px;
+            width: 225px;
+            top: 31px;
+            left: 16px;
+        }
+    }
+}

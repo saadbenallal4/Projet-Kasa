@@ -6,18 +6,12 @@ import arrowDown from "../../assets/icons/arrow-down.png";
 import arrowUp from "../../assets/icons/arrow-up.png";
 
 // Composant Collapse qui affiche un bloc pliable (accordéon)
-function Collapse({ title, content }) {
-    // État local pour savoir si le collapse est ouvert ou fermé
+function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
-
-    // Inverse l'état à chaque clic sur l'en-tête
-    const toggleCollapse = () => {
-        setIsOpen(!isOpen);
-    };
+    const toggleCollapse = () => setIsOpen(!isOpen);
 
     return (
         <div className="collapse">
-            {/* En-tête cliquable avec titre et icône */}
             <div className="collapse-header" onClick={toggleCollapse}>
                 <h3 className="collapse-title">{title}</h3>
                 <img
@@ -27,25 +21,24 @@ function Collapse({ title, content }) {
                 />
             </div>
 
-            {/* Contenu conditionnel : affiché seulement si isOpen est true */}
             {isOpen && (
                 <div className="collapse-content">
-                    {/* Si content est un tableau, afficher une liste */}
-                    {Array.isArray(content) ? (
+                    {/* Si children est un tableau, on crée une liste. Sinon, on affiche tel quel. */}
+                    {Array.isArray(children) ? (
                         <ul>
-                            {content.map((item, index) => (
+                            {children.map((item, index) => (
                                 <li key={index}>{item}</li>
                             ))}
                         </ul>
                     ) : (
-                        // Sinon afficher le contenu en paragraphe
-                        <p>{content}</p>
+                        <>{children}</> // Ici on n'ajoute aucune balise inutile
                     )}
                 </div>
             )}
         </div>
     );
 }
+
 
 export default Collapse;
 

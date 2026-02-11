@@ -1,0 +1,22 @@
+  @media screen and (max-width: 768px) {
+      .aboutpage .collapse {
+          width: 100%;
+          gap: 15px;
+          margin-left: 15px;
+      }
+
+      .aboutpage .collapse-header {
+          padding: 10px 15px;
+          font-size: 14px;
+          height: 30px;
+      }
+
+      .aboutpage .collapse-content {
+          padding: 10px 15px;
+          font-size: 13px;
+      }
+
+      .aboutpage .collapse-title {
+          font-size: 14px;
+      }
+  }

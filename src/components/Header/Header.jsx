@@ -1,10 +1,8 @@
 // Import des modules nécessaires
-
 import { Link } from 'react-router-dom';
 import './Header.scss';
 import logo from '../../assets/logo/logo.png';
 
-// Composant Header
 function Header() {
     return (
         <header className="header">
@@ -20,5 +18,4 @@ function Header() {
     );
 }
 
-// Export du composant
 export default Header;

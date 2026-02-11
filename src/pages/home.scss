@@ -1,14 +1,15 @@
-.home {
-    padding: 0 50px;
+.cards-container {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
 
-    .cards-container {
-        margin: 40px 0;
-        padding: 30px;
-        background-color: #f6f6f6;
-        border-radius: 25px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        justify-items: center;
+    @media screen and (max-width: 768px) {
+        padding: 20px;
+        background-color: white;
     }
 }

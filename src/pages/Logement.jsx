@@ -3,7 +3,7 @@ import { useParams, Navigate } from "react-router-dom";
 import logements from "../data/logements.json";
 import Slideshow from "../components/Slideshow/Slideshow";
 import Collapse from "../components/Collapse/Collapse";
-import "../pages/Logement.scss"; // assure-toi de créer ce fichier ou de l'ajuster
+import "../pages/Logement.scss";
 
 function Logement() {
     // Récupération de l'id du logement via l'URL
@@ -52,20 +52,21 @@ function Logement() {
                 </div>
             </div>
 
-            {/* ✅ Collapse Description et Équipements ici */}
+            {/* Collapse Description et Équipements */}
             <div className="logement-collapses">
-                <Collapse title="Description" content={logement.description} />
-                <Collapse
-                    title="Équipements"
-                    content={
-                        <ul>
-                            {logement.equipments.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
-                    }
-                />
+                <Collapse title="Description">
+                    <p>{logement.description}</p>
+                </Collapse>
+
+                <Collapse title="Équipements">
+                    <ul>
+                        {logement.equipments.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                </Collapse>
             </div>
+
         </div>
     );
 }

@@ -43,5 +43,53 @@
         font-family: "Montserrat", sans-serif;
     }
 
+    @media screen and (max-width: 768px) {
+        .collapse {
+            width: 100%;
+            margin: 0 auto;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
 
+        .collapse-header {
+            padding: 10px 15px;
+            font-size: 14px;
+            width: 300px;
+            height: 30px;
+        }
+
+        .collapse-content {
+            padding: 10px 15px;
+            font-size: 13px;
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .aboutpage .collapse {
+            width: 100%;
+            margin: 0 auto;
+            gap: 15px;
+        }
+
+        .aboutpage .collapse-header {
+            padding: 10px 15px;
+            font-size: 14px;
+            height: 30px;
+        }
+
+        .aboutpage .collapse-content {
+            padding: 10px 15px;
+            font-size: 13px;
+        }
+
+        .aboutpage .collapse-title {
+            font-size: 14px;
+        }
+
+        // Test visible :
+        .aboutpage {
+            background-color: red !important;
+        }
+    }
 }
