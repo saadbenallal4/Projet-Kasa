@@ -17,7 +17,7 @@ function Collapse({ title, children }) {
                 <img
                     src={isOpen ? arrowUp : arrowDown}
                     alt={isOpen ? "fermer" : "ouvrir"}
-                    className="collapse-icon"
+                    className={`collapse-icon ${isOpen ? "open" : ""}`}
                 />
             </div>
 

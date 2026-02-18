@@ -16,19 +16,26 @@ import Footer from './components/Footer/Footer';
 //App = composant principal de l'application (rappel)
 function App() {
   return (
-    <>
+    <div className="layout">
       <Header />
-      {/* Toutes les routes sont définies ici */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/logement/:id" element={<Logement />} />
-        <Route path="*" element={<Page404 />} />
-      </Routes>
+
+      <main className="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/logement/:id" element={<Logement />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+      </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
+
+
+
+
 
 // Exporte App pour pouvoir l’utiliser dans main.jsx (rappel)
 export default App
