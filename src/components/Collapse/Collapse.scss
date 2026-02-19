@@ -30,13 +30,19 @@
         transition: transform 0.3s ease;
     }
 
-    // Ajoute une rotation quand la classe 'rotate' est présente
-    .rotate {
-        transform: rotate(180deg);
-    }
-
     .collapse-content {
         background-color: #f6f6f6;
+        border-radius: 5px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+    }
+
+    .collapse-content.open {
+        max-height: 200px;
+    }
+
+    .collapse-inner {
         padding: 20px;
         font-size: 15px;
         color: black;

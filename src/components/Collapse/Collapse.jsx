@@ -1,7 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Collapse.scss";
-
-// Importation de l’icône (une seule suffit)
 import arrowDown from "../../assets/icons/arrow-down.png";
 
 function Collapse({ title, children }) {
@@ -23,9 +21,8 @@ function Collapse({ title, children }) {
                 />
             </div>
 
-            {isOpen && (
-                <div className="collapse-content">
-                    {/* Si children est un tableau, on affiche une liste */}
+            <div className={`collapse-content ${isOpen ? "open" : ""}`}>
+                <div className="collapse-inner">
                     {Array.isArray(children) ? (
                         <ul>
                             {children.map((item, index) => (
@@ -36,9 +33,10 @@ function Collapse({ title, children }) {
                         children
                     )}
                 </div>
-            )}
+            </div>
         </div>
     );
 }
 
 export default Collapse;
+
